@@ -1,0 +1,11 @@
+{{> header}}
+<section id="content">
+	<h2>{{text}}</h2>
+	{{#if hint}}
+		<p><i>{{hint}}</i></p>
+	{{/if}}
+	<a href="{{id}}?side={{sideToShow}}">{{sideToShowDisplay}}</a>
+	<br>
+	<a href="/cards">Next Question</a>
+</section>
+{{> footer}}

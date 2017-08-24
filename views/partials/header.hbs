@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 	<meta charset="utf-8">
+	<title>Flash Cards</title>
+	<link rel="stylesheet" href="/static/stylesheets/style.css" type="text/css">
+</head>
+<body>
+	<header>
+		<img src="/static/images/logo.png">
+		<p>An app to help you study</p>
+	</header>
+	<section class="namecard">
+		{{#if name}}
+			<div class="namecard-hello">
+				<p class="namecard-greeting">Welcome, {{name}}!</p>
+				<form action="/goodbye" method="post" class="namecard-exit">
+					<button type="submit"><img src="/static/images/close.svg"></button>
+				</form>
+			</div>
+		{{/if}}
